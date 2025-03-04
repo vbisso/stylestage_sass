@@ -1,0 +1,94 @@
+.container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#about,
+#guidelines,
+#contribute {
+  margin: 5rem 0 auto;
+  max-width: 80%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+//Setting the stage
+#about .container:nth-of-type(1) {
+  margin-top: 2rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p:nth-of-type(2)::after,
+  blockquote::after {
+    content: "_________________________";
+    display: block;
+    margin: 2rem 0;
+  }
+
+  blockquote p strong {
+    //How It Works
+    display: block;
+  }
+  blockquote {
+    margin: 0;
+  }
+}
+
+#about .container:nth-of-type(2) {
+  margin-top: 3rem;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 1em;
+
+    li {
+      padding: 1em;
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+//Guidelines
+.link-guidelines {
+  display: block;
+  margin: auto;
+  max-width: fit-content;
+  background-color: white;
+  color: black;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+
+//contribute
+#contribute .container:nth-of-type(2) ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 60%;
+  justify-self: center;
+  list-style-type: none;
+  counter-reset: my-counter;
+  padding: 0;
+
+  li {
+    counter-increment: my-counter;
+    &::before {
+      content: counter(my-counter);
+      margin-right: 1rem;
+      font-weight: bold;
+      font-size: 4rem;
+    }
+  }
+}
