@@ -81,14 +81,36 @@
   list-style-type: none;
   counter-reset: my-counter;
   padding: 0;
+  text-align: center;
 
   li {
     counter-increment: my-counter;
+
     &::before {
       content: counter(my-counter);
       margin-right: 1rem;
+      position: relative;
       font-weight: bold;
       font-size: 4rem;
     }
+  }
+}
+//source files
+#files .container {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 30%;
+
+  a {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 1em 2em;
+    text-decoration: none;
   }
 }

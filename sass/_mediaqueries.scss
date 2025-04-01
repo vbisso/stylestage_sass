@@ -1,5 +1,170 @@
-@media screen and (min-width: 700px) {
-  nav {
-    height: 1066px;
+// Breakpoints
+$break-small: 825px;
+$break-medium: 1160px;
+$break-large: 1440px;
+
+// Heights for nav
+$nav-height-large: 90vh;
+$nav-height-medium: 500px;
+$nav-height-small: 355px;
+
+// Font Sizes
+$font-size-small: 0.875rem; // 14px
+$font-size-base: 1rem; // 16px
+$font-size-medium: 1.25rem; // 20px
+$font-size-large: 1.5rem; // 24px
+$font-size-xlarge: 1.75rem; //
+$font-size-xxlarge: 3rem; // 48px
+
+nav {
+  @media (min-width: $break-medium) {
+    height: $nav-height-large;
+  }
+
+  @media (min-width: $break-small) and (max-width: $break-medium) {
+    height: $nav-height-medium;
+  }
+
+  @media (min-width: 425px) and (max-width: $break-small) {
+    height: $nav-height-small;
   }
 }
+
+@media (max-width: $break-small) {
+  #files .container {
+    width: 80%;
+  }
+
+  #contribute .container:nth-of-type(2) ol li::before {
+    display: block;
+  }
+}
+
+@media (min-width: $break-small) {
+  footer .container {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5em;
+    }
+
+    .link-github svg {
+      height: 300px;
+    }
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    gap: 15px;
+    padding-right: 15px;
+  }
+
+  header {
+    .container > a {
+      position: absolute;
+      top: calc(175% + 20px);
+      z-index: 5;
+      left: 5%;
+      transform: translateX(-5%);
+    }
+
+    .link-github {
+      color: white;
+
+      svg {
+        fill: black;
+      }
+    }
+  }
+  body {
+    font-size: $font-size-medium;
+  }
+  h1 {
+    font-size: $font-size-xxlarge;
+  }
+}
+@media (min-width: $break-small) and (max-width: $break-medium) {
+  header {
+    .link-github {
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: $break-medium) and (max-width: $break-large) {
+  header {
+    .container > a {
+      top: calc(175% + 10px);
+    }
+
+    .link-github {
+      height: 300px;
+      width: 250px;
+    }
+  }
+  body {
+    font-size: $font-size-large;
+  }
+}
+
+@media (min-width: $break-large) {
+  header {
+    .container > a {
+      top: calc(185% + 40px);
+    }
+  }
+  nav ul {
+    font-size: $font-size-xlarge;
+    gap: 60px;
+    padding-right: 40px;
+  }
+  .link-github {
+    font-size: $font-size-xlarge;
+    height: 350px;
+    width: 300px;
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   #files .container {
+//     width: 80%;
+//   }
+
+//   #contribute .container:nth-of-type(2) ol li::before {
+//     display: block;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   nav ul {
+//     justify-content: flex-end;
+//     gap: 15px;
+//     padding-right: 15px;
+//   }
+
+//   header {
+//     .container > a {
+//       position: absolute;
+//       top: calc(225% + 10px);
+//       z-index: 5;
+//       left: 5%;
+//       transform: translateX(-5%);
+//     }
+
+//     .link-github {
+//       color: white;
+
+//       svg {
+//         fill: black;
+//       }
+//     }
+//   }
+// }
+// @media screen and (min-width: 1168px) {
+//   header {
+//     .container > a {
+//       top: calc(325% + 10px);
+//     }
+//   }
+// }
