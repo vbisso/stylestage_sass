@@ -41,18 +41,8 @@ nav {
 }
 
 @media (min-width: $break-small) {
-  footer .container {
-    ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1.5em;
-    }
-
-    .link-github svg {
-      height: 300px;
-    }
+  .page-footer .link-github svg {
+    height: 300px;
   }
 
   nav ul {
