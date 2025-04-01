@@ -351,7 +351,8 @@ footer .container ul {
   gap: 1.5em;
 }
 footer .container p,
-footer .container a {
+footer .container a,
+footer .container strong {
   color: black;
 }
 
