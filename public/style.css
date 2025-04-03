@@ -263,7 +263,7 @@ header .container > a {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 li {
