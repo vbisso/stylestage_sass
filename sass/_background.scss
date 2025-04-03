@@ -3,10 +3,10 @@ html {
 }
 
 html:before {
-  content: "*";
+  content: "★";
   //content: "â˜…";
   color: white;
-  font-size: 10px;
+  font-size: 20px;
   position: fixed;
   animation: twinkle_stars 2s linear 0s infinite;
   text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white,

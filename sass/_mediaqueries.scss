@@ -15,7 +15,8 @@ $font-size-base: 1rem; // 16px
 $font-size-medium: 1.25rem; // 20px
 $font-size-large: 1.5rem; // 24px
 $font-size-xlarge: 1.75rem; //
-$font-size-xxlarge: 3rem; // 48px
+$font-size-xxlarge: 2rem;
+$font-size-xxxlarge: 5rem;
 
 nav {
   @media (min-width: $break-medium) {
@@ -63,7 +64,8 @@ nav {
   header {
     .container > a {
       position: absolute;
-      top: calc(175% + 20px);
+      top: calc(135% + 20px);
+      height: 200px;
       z-index: 5;
       left: 5%;
       transform: translateX(-5%);
@@ -81,13 +83,13 @@ nav {
     font-size: $font-size-medium;
   }
   h1 {
-    font-size: $font-size-xxlarge;
+    font-size: $font-size-xxxlarge;
   }
 }
 @media (min-width: $break-small) and (max-width: $break-medium) {
   header {
     .link-github {
-      height: 200px;
+      height: 100px;
     }
   }
 }
@@ -95,16 +97,21 @@ nav {
 @media (min-width: $break-medium) and (max-width: $break-large) {
   header {
     .container > a {
-      top: calc(175% + 10px);
+      top: calc(145% + 10px);
+      height: 300px;
     }
 
     .link-github {
-      height: 300px;
+      height: 250px;
       width: 250px;
     }
   }
   body {
     font-size: $font-size-large;
+  }
+
+  .link-github {
+    width: 225px;
   }
 }
 
@@ -117,7 +124,8 @@ nav {
 
   header {
     .container > a {
-      top: calc(185% + 40px);
+      height: 350px;
+      top: calc(150% + 40px);
     }
   }
   nav ul {
@@ -132,6 +140,15 @@ nav {
   }
 }
 @media (min-width: $break-xlarge) {
+  header {
+    .container > a {
+      height: 450px;
+      top: calc(165% + 40px);
+    }
+  }
+  header h1 {
+    font-size: $font-size-xxxlarge;
+  }
   body {
     font-size: $font-size-xxlarge;
   }
