@@ -171,10 +171,35 @@ body {
 }
 
 html {
-  background-image: linear-gradient(#000000, #004aad);
-  background-size: cover;
+  background: linear-gradient(#000000, #004aad);
 }
 
+html:before {
+  content: "*";
+  color: white;
+  font-size: 10px;
+  position: fixed;
+  animation: twinkle_stars 2s linear 0s infinite;
+  text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white, 10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 0px white, 30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white, 40vmax 85vmax 0px white, 50vmax 45vmax 0px white, 50vmax 70vmax 0px white, 60vmax 20vmax 0px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white, 70vmax 65vmax 0px white, 75vmax 90vmax 0px white, 79vmax 1vmax 0px white, 85vmax 39vmax 0px white, 90vmax 68vmax 0px white, 95vmax 22vmax 0px white;
+}
+
+@keyframes twinkle_stars {
+  0% {
+    text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white, 10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 0px white, 30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white, 40vmax 85vmax 0px white, 50vmax 45vmax 0px white, 50vmax 70vmax 0px white, 60vmax 20vmax 0px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white, 70vmax 65vmax 0px white, 75vmax 90vmax 0px white, 79vmax 1vmax 0px white, 85vmax 39vmax 0px white, 90vmax 68vmax 0px white, 95vmax 22vmax 0px white;
+  }
+  25% {
+    text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 4px white, 10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 4px white, 30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white, 40vmax 85vmax 0px white, 50vmax 45vmax 4px white, 50vmax 70vmax 0px white, 60vmax 20vmax 4px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white, 70vmax 65vmax 0px white, 75vmax 90vmax 4px white, 79vmax 1vmax 0px white, 85vmax 39vmax 4px white, 90vmax 68vmax 0px white, 95vmax 22vmax 4px white;
+  }
+  50% {
+    text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white, 10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 0px white, 30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white, 40vmax 85vmax 0px white, 50vmax 45vmax 0px white, 50vmax 70vmax 0px white, 60vmax 20vmax 0px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white, 70vmax 65vmax 0px white, 75vmax 90vmax 0px white, 79vmax 1vmax 0px white, 85vmax 39vmax 0px white, 90vmax 68vmax 0px white, 95vmax 22vmax 0px white;
+  }
+  75% {
+    text-shadow: 3vmax 65vmax 4px white, 5vmax 20vmax 0px white, 10vmax 3vmax 4px white, 12vmax 60vmax 4px white, 15vmax 70vmax 0px white, 30vmax 8vmax 4px white, 30vmax 40vmax 4px white, 40vmax 25vmax 4px white, 40vmax 85vmax 4px white, 50vmax 45vmax 0px white, 50vmax 70vmax 4px white, 60vmax 20vmax 0px white, 60vmax 47vmax 4px white, 70vmax 2vmax 4px white, 70vmax 65vmax 4px white, 75vmax 90vmax 0px white, 79vmax 1vmax 4px white, 85vmax 39vmax 0px white, 90vmax 68vmax 4px white, 95vmax 22vmax 0px white;
+  }
+  100% {
+    text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white, 10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 0px white, 30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white, 40vmax 85vmax 0px white, 50vmax 45vmax 0px white, 50vmax 70vmax 0px white, 60vmax 20vmax 0px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white, 70vmax 65vmax 0px white, 75vmax 90vmax 0px white, 79vmax 1vmax 0px white, 85vmax 39vmax 0px white, 90vmax 68vmax 0px white, 95vmax 22vmax 0px white;
+  }
+}
 nav {
   background-image: url("images/cloud.png");
   background-size: cover;
@@ -271,6 +296,12 @@ li {
   }
 }
 @media (min-width: 825px) {
+  .page-footer {
+    background-position: center;
+  }
+  .page-footer .container ul li:nth-child(2) {
+    margin: 2rem 0;
+  }
   .page-footer .link-github svg {
     height: 300px;
   }
@@ -292,7 +323,7 @@ li {
     color: white;
   }
   header .link-github svg {
-    fill: black;
+    fill: #1a1919;
   }
 
   body {
@@ -322,6 +353,10 @@ li {
   }
 }
 @media (min-width: 1440px) {
+  .page-footer .container ul {
+    margin-bottom: calc(15rem + 50px);
+  }
+
   header .container > a {
     top: calc(185% + 40px);
   }
@@ -338,42 +373,44 @@ li {
     width: 300px;
   }
 }
+@media (min-width: 1920px) {
+  body {
+    font-size: 3rem;
+  }
+}
 * {
   color: white;
   font-family: "Roboto";
 }
 
-footer .container ul {
+.page-footer .container ul {
+  margin-bottom: calc(10rem + 50px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 1.5em;
 }
-footer .container p,
-footer .container a,
-footer .container strong {
+.page-footer .container ul .link-github svg {
+  z-index: -2;
+}
+.page-footer .container p:nth-of-type(2) {
+  color: black;
+}
+.page-footer .container p:nth-of-type(2) > a,
+.page-footer .container p:nth-of-type(2) strong {
+  color: black;
+}
+.page-footer .container p:nth-of-type(3) {
+  color: black;
+}
+.page-footer .container p:nth-of-type(3) > a {
   color: black;
 }
 
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
-}
-.page-footer::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 700px;
-  z-index: -5;
-  background-image: url("images/cloud.png");
+  background-image: url("images/cloud_footer.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: -250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }

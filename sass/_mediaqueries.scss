@@ -2,6 +2,7 @@
 $break-small: 825px;
 $break-medium: 1160px;
 $break-large: 1440px;
+$break-xlarge: 1920px;
 
 // Heights for nav
 $nav-height-large: 90vh;
@@ -41,8 +42,16 @@ nav {
 }
 
 @media (min-width: $break-small) {
-  .page-footer .link-github svg {
-    height: 300px;
+  .page-footer {
+    background-position: center;
+    .container {
+      ul li:nth-child(2) {
+        margin: 2rem 0;
+      }
+    }
+    .link-github svg {
+      height: 300px;
+    }
   }
 
   nav ul {
@@ -64,7 +73,7 @@ nav {
       color: white;
 
       svg {
-        fill: black;
+        fill: rgb(26, 25, 25);
       }
     }
   }
@@ -100,6 +109,12 @@ nav {
 }
 
 @media (min-width: $break-large) {
+  .page-footer .container {
+    ul {
+      margin-bottom: calc(15rem + 50px);
+    }
+  }
+
   header {
     .container > a {
       top: calc(185% + 40px);
@@ -114,6 +129,11 @@ nav {
     font-size: $font-size-xlarge;
     height: 350px;
     width: 300px;
+  }
+}
+@media (min-width: $break-xlarge) {
+  body {
+    font-size: $font-size-xxlarge;
   }
 }
 

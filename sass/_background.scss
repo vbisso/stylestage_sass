@@ -1,4 +1,67 @@
 html {
-    background-image: linear-gradient(#000000, #004aad);
-    background-size: cover;
+  background: linear-gradient(#000000, #004aad);
+}
+
+html:before {
+  content: "*";
+  //content: "â˜…";
+  color: white;
+  font-size: 10px;
+  position: fixed;
+  animation: twinkle_stars 2s linear 0s infinite;
+  text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white,
+    10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 0px white,
+    30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white,
+    40vmax 85vmax 0px white, 50vmax 45vmax 0px white, 50vmax 70vmax 0px white,
+    60vmax 20vmax 0px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white,
+    70vmax 65vmax 0px white, 75vmax 90vmax 0px white, 79vmax 1vmax 0px white,
+    85vmax 39vmax 0px white, 90vmax 68vmax 0px white, 95vmax 22vmax 0px white;
+}
+
+@keyframes twinkle_stars {
+  0% {
+    text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white,
+      10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 0px white,
+      30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white,
+      40vmax 85vmax 0px white, 50vmax 45vmax 0px white, 50vmax 70vmax 0px white,
+      60vmax 20vmax 0px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white,
+      70vmax 65vmax 0px white, 75vmax 90vmax 0px white, 79vmax 1vmax 0px white,
+      85vmax 39vmax 0px white, 90vmax 68vmax 0px white, 95vmax 22vmax 0px white;
   }
+  25% {
+    text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 4px white,
+      10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 4px white,
+      30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white,
+      40vmax 85vmax 0px white, 50vmax 45vmax 4px white, 50vmax 70vmax 0px white,
+      60vmax 20vmax 4px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white,
+      70vmax 65vmax 0px white, 75vmax 90vmax 4px white, 79vmax 1vmax 0px white,
+      85vmax 39vmax 4px white, 90vmax 68vmax 0px white, 95vmax 22vmax 4px white;
+  }
+  50% {
+    text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white,
+      10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 0px white,
+      30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white,
+      40vmax 85vmax 0px white, 50vmax 45vmax 0px white, 50vmax 70vmax 0px white,
+      60vmax 20vmax 0px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white,
+      70vmax 65vmax 0px white, 75vmax 90vmax 0px white, 79vmax 1vmax 0px white,
+      85vmax 39vmax 0px white, 90vmax 68vmax 0px white, 95vmax 22vmax 0px white;
+  }
+  75% {
+    text-shadow: 3vmax 65vmax 4px white, 5vmax 20vmax 0px white,
+      10vmax 3vmax 4px white, 12vmax 60vmax 4px white, 15vmax 70vmax 0px white,
+      30vmax 8vmax 4px white, 30vmax 40vmax 4px white, 40vmax 25vmax 4px white,
+      40vmax 85vmax 4px white, 50vmax 45vmax 0px white, 50vmax 70vmax 4px white,
+      60vmax 20vmax 0px white, 60vmax 47vmax 4px white, 70vmax 2vmax 4px white,
+      70vmax 65vmax 4px white, 75vmax 90vmax 0px white, 79vmax 1vmax 4px white,
+      85vmax 39vmax 0px white, 90vmax 68vmax 4px white, 95vmax 22vmax 0px white;
+  }
+  100% {
+    text-shadow: 3vmax 65vmax 0px white, 5vmax 20vmax 0px white,
+      10vmax 3vmax 0px white, 12vmax 60vmax 0px white, 15vmax 70vmax 0px white,
+      30vmax 8vmax 0px white, 30vmax 40vmax 0px white, 40vmax 25vmax 0px white,
+      40vmax 85vmax 0px white, 50vmax 45vmax 0px white, 50vmax 70vmax 0px white,
+      60vmax 20vmax 0px white, 60vmax 47vmax 0px white, 70vmax 2vmax 0px white,
+      70vmax 65vmax 0px white, 75vmax 90vmax 0px white, 79vmax 1vmax 0px white,
+      85vmax 39vmax 0px white, 90vmax 68vmax 0px white, 95vmax 22vmax 0px white;
+  }
+}
