@@ -270,6 +270,10 @@ li {
   list-style: none;
 }
 
+ol {
+  border-style: none none solid;
+}
+
 @media (min-width: 1160px) {
   nav {
     height: 90vh;
